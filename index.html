@@ -26,9 +26,14 @@
 </head>
 
 <body>
-    <div align="center" id="hello-world">
-        <h1>Hello World! :)</h1>
-    </div>
+    <script>
+    var foo = getParameterByName('url');
+        document.write(`
+    <iframe src="${foo}">
+
+</iframe>
+`)
+    </script>
 
 </body>
 
